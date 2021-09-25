@@ -4,13 +4,13 @@ import time
 import random
 
 DESIRED_URL_VK = "https://vk.com/im?sel=197528377"
-TEST = "https://vk.com/im?sel=287019666"
+
 TIME_FOR_WEBPAGE_OPEN = 5
 
 phrases = ("CS idem, ili net?", "Zaletai v cs, ya uze tut", "Go katku v cs", "Ne ponyal, cs idesh chi sho?")
 phrase_index = random.randrange(0, len(phrases))
 
-webbrowser.open(TEST, new=2, autoraise=True)
+webbrowser.open(DESIRED_URL_VK, new=2, autoraise=True)
 
 time.sleep(TIME_FOR_WEBPAGE_OPEN)
 pyautogui.typewrite(phrases[phrase_index])
