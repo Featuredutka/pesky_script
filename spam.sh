@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Enter desired amount of messages per hour";
 read;
 for ((i=0; i<=$REPLY; i++))
